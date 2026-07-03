@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OURFLIX — 1 Year Anniversary</title>
+<meta name="description" content="A personalized Netflix-style anniversary gift." />
+
+<!-- Tailwind CSS, pre-compiled locally — no CDN, works fully offline -->
+<link rel="stylesheet" href="tailwind.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-netflix-black text-white font-sans antialiased overflow-x-hidden">
+
+<!-- =========================================================================
+     LOGIN / PROFILE SCREEN
+========================================================================== -->
+<section id="login-screen" class="fixed inset-0 z-50 flex flex-col items-center justify-center login-bg">
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <div class="relative z-10 flex flex-col items-center px-6 text-center">
+    <h1 class="text-netflix-red font-black text-4xl md:text-5xl tracking-tight mb-16 select-none" id="login-logo">OURFLIX</h1>
+
+    <h2 class="text-2xl md:text-3xl text-neutral-200 font-medium mb-10">Who's Watching?</h2>
+
+    <button id="profile-btn" class="group flex flex-col items-center gap-3 focus:outline-none">
+      <div class="w-24 h-24 md:w-32 md:h-32 rounded-md bg-gradient-to-br from-netflix-red to-pink-700 flex items-center justify-center text-4xl md:text-5xl shadow-lg ring-2 ring-transparent group-hover:ring-white transition duration-200 group-hover:scale-105">
+        ❤️
+      </div>
+      <span id="profile-name" class="text-neutral-400 group-hover:text-white text-base md:text-lg transition">Our Story</span>
+    </button>
+  </div>
+
+  <!-- Password modal -->
+  <div id="password-modal" class="hidden fixed inset-0 z-20 flex items-center justify-center bg-black/80 px-4">
+    <div class="bg-neutral-900 border border-neutral-700 rounded-md w-full max-w-sm p-8 shadow-2xl">
+      <h3 class="text-xl font-semibold mb-1">Enter Password</h3>
+      <p class="text-neutral-400 text-sm mb-6">This profile is protected. Enter the secret date.</p>
+
+      <input id="password-input" type="password" inputmode="numeric" placeholder="Password"
+        class="w-full bg-neutral-800 border border-neutral-600 focus:border-white rounded px-4 py-3 text-white placeholder-neutral-500 outline-none transition mb-2" />
+
+      <p id="password-error" class="hidden text-netflix-red text-sm mb-3">
+        Hmm, that password didn't work. Try again.
+      </p>
+
+      <div class="flex gap-3 mt-4">
+        <button id="password-submit" class="flex-1 bg-netflix-red hover:bg-red-700 transition text-white font-semibold rounded px-4 py-2.5">Continue</button>
+        <button id="password-cancel" class="flex-1 bg-neutral-700 hover:bg-neutral-600 transition text-white font-semibold rounded px-4 py-2.5">Cancel</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     ANNIVERSARY CELEBRATION OVERLAY
+========================================================================== -->
+<section id="celebration-overlay" class="hidden fixed inset-0 z-[60] flex items-center justify-center bg-black overflow-hidden cursor-pointer">
+  <div id="hearts-container" class="absolute inset-0 pointer-events-none"></div>
+  <div class="relative z-10 text-center px-6 celebration-content">
+    <p class="text-netflix-red font-black text-3xl sm:text-5xl md:text-6xl tracking-tight mb-4 celebration-title">
+      <span id="celebration-message">Happy 1 Year Anniversary! ❤️</span>
+    </p>
+    <p id="celebration-sub" class="text-neutral-300 text-base md:text-xl celebration-sub">Here's to us, and everything still to come.</p>
+    <p class="text-neutral-500 text-xs md:text-sm mt-10 animate-pulse">tap anywhere to continue</p>
+  </div>
+</section>
+
+<!-- =========================================================================
+     MAIN APP
+========================================================================== -->
+<div id="main-app" class="hidden">
+
+  <!-- NAVBAR -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-40 transition-colors duration-300 px-4 md:px-10 py-4 flex items-center justify-between navbar-transparent">
+    <div class="flex items-center gap-8">
+      <span class="text-netflix-red font-black text-xl md:text-2xl tracking-tight select-none" id="main-logo">OURFLIX</span>
+      <nav class="hidden md:flex gap-6 text-sm text-neutral-200">
+        <button data-tab="home" class="nav-link text-white font-semibold">Home</button>
+        <button data-tab="videos" class="nav-link text-neutral-300 hover:text-white transition">Videos</button>
+        <button data-tab="photos" class="nav-link text-neutral-300 hover:text-white transition">Photos</button>
+        <button data-tab="story" class="nav-link text-neutral-300 hover:text-white transition">Our Story</button>
+      </nav>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <div class="w-8 h-8 rounded bg-gradient-to-br from-netflix-red to-pink-700 flex items-center justify-center text-sm">❤️</div>
+      <button id="mobile-menu-btn" class="md:hidden text-white text-2xl leading-none">☰</button>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <nav id="mobile-nav" class="hidden fixed top-[60px] left-0 right-0 z-40 bg-netflix-black/95 border-b border-neutral-800 flex flex-col md:hidden">
+    <button data-tab="home" class="nav-link-mobile text-left px-6 py-3 text-white font-semibold">Home</button>
+    <button data-tab="videos" class="nav-link-mobile text-left px-6 py-3 text-neutral-300">Videos</button>
+    <button data-tab="photos" class="nav-link-mobile text-left px-6 py-3 text-neutral-300">Photos</button>
+    <button data-tab="story" class="nav-link-mobile text-left px-6 py-3 text-neutral-300">Our Story</button>
+  </nav>
+
+  <!-- ===================== HOME TAB ===================== -->
+  <main id="tab-home" class="tab-panel">
+    <!-- HERO BILLBOARD -->
+    <section class="relative h-[62vh] md:h-[85vh] w-full overflow-hidden">
+      <video id="hero-video" class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline poster=""></video>
+      <div class="absolute inset-0 bg-gradient-to-t from-netflix-black via-netflix-black/20 to-black/40"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-transparent"></div>
+
+      <div class="relative z-10 h-full flex flex-col justify-end px-4 md:px-10 pb-16 md:pb-24 max-w-2xl">
+        <span id="hero-tag" class="text-netflix-red font-bold text-xs md:text-sm tracking-widest mb-3"></span>
+        <h1 id="hero-title" class="text-3xl sm:text-5xl md:text-6xl font-black mb-4 drop-shadow-lg"></h1>
+        <p id="hero-description" class="text-sm md:text-lg text-neutral-200 mb-6 line-clamp-3 drop-shadow"></p>
+        <div class="flex gap-3">
+          <button id="hero-play-btn" class="flex items-center gap-2 bg-white hover:bg-neutral-200 transition text-black font-bold px-5 md:px-7 py-2.5 md:py-3 rounded">
+            <span>▶</span> Play
+          </button>
+          <button id="hero-info-btn" class="flex items-center gap-2 bg-neutral-500/40 hover:bg-neutral-500/60 backdrop-blur transition text-white font-bold px-5 md:px-7 py-2.5 md:py-3 rounded">
+            <span>ⓘ</span> More Info
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROWS -->
+    <section class="relative z-10 -mt-8 md:-mt-16 pb-24 space-y-10 md:space-y-14">
+      <div class="row-block">
+        <h2 class="row-title">Trending Now (Our Favorite Videos)</h2>
+        <div class="row-wrapper">
+          <button class="row-arrow row-arrow-left" data-target="row-videos">&#10094;</button>
+          <div id="row-videos" class="row-track"></div>
+          <button class="row-arrow row-arrow-right" data-target="row-videos">&#10095;</button>
+        </div>
+      </div>
+
+      <div class="row-block">
+        <h2 class="row-title">Award-Winning Photos</h2>
+        <div class="row-wrapper">
+          <button class="row-arrow row-arrow-left" data-target="row-photos">&#10094;</button>
+          <div id="row-photos" class="row-track"></div>
+          <button class="row-arrow row-arrow-right" data-target="row-photos">&#10095;</button>
+        </div>
+      </div>
+
+      <div class="row-block">
+        <h2 class="row-title">Special Milestones</h2>
+        <div class="row-wrapper">
+          <button class="row-arrow row-arrow-left" data-target="row-milestones">&#10094;</button>
+          <div id="row-milestones" class="row-track"></div>
+          <button class="row-arrow row-arrow-right" data-target="row-milestones">&#10095;</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== VIDEOS TAB ===================== -->
+  <section id="tab-videos" class="tab-panel hidden pt-24 px-4 md:px-10 pb-24 min-h-screen">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6">All Videos</h2>
+    <div id="grid-videos" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5"></div>
+  </section>
+
+  <!-- ===================== PHOTOS TAB ===================== -->
+  <section id="tab-photos" class="tab-panel hidden pt-24 px-4 md:px-10 pb-24 min-h-screen">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6">All Photos</h2>
+    <div id="grid-photos" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5"></div>
+  </section>
+
+  <!-- ===================== OUR STORY TAB ===================== -->
+  <section id="tab-story" class="tab-panel hidden pt-24 px-4 md:px-10 pb-24 min-h-screen max-w-3xl mx-auto">
+    <h2 class="text-2xl md:text-3xl font-bold mb-2">Our Story</h2>
+    <p id="story-intro" class="text-neutral-400 mb-10"></p>
+    <div id="story-timeline" class="relative border-l-2 border-neutral-800 pl-6 space-y-10"></div>
+  </section>
+
+</div>
+
+<!-- =========================================================================
+     "MORE INFO" MEDIA MODAL
+========================================================================== -->
+<div id="media-modal" class="hidden fixed inset-0 z-[70] bg-black/80 flex items-start md:items-center justify-center overflow-y-auto p-0 md:p-6">
+  <div class="bg-neutral-900 w-full md:max-w-2xl md:rounded-md overflow-hidden shadow-2xl relative modal-box">
+    <button id="modal-close" class="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-black/60 hover:bg-black/80 flex items-center justify-center text-white text-lg">✕</button>
+
+    <div id="modal-media" class="w-full aspect-video bg-black flex items-center justify-center"></div>
+
+    <div class="p-5 md:p-8">
+      <div class="flex items-center flex-wrap gap-x-4 gap-y-1 mb-3 text-sm">
+        <span id="modal-match" class="text-green-500 font-bold"></span>
+        <span id="modal-year" class="text-neutral-300"></span>
+        <span id="modal-rating" class="border border-neutral-500 text-neutral-300 px-1.5 text-xs rounded"></span>
+      </div>
+      <h3 id="modal-title" class="text-2xl md:text-3xl font-bold mb-3"></h3>
+      <p id="modal-description" class="text-neutral-200 mb-5 leading-relaxed"></p>
+      <div id="modal-tags" class="flex flex-wrap gap-2"></div>
+    </div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
