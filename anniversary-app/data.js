@@ -37,17 +37,17 @@ const SITE_CONFIG = {
 // HERO / FEATURED BILLBOARD  (top of the Home tab)
 // ---------------------------------------------------------------------------
 const HERO = {
-  title: "Us: A Love Story", // 🔧 PLACEHOLDER
+  title: "", // intentionally blank — no on-screen title for this clip
   tag: "OURFLIX ORIGINAL",
   description:
-    "One year ago, two people decided to become a story worth telling. This is the trailer for everything that came after — the laughs, the trips, the quiet nights, and the loud ones too.", // 🔧 PLACEHOLDER
+    "This is the story of my proposal from exactly one year ago. 🎡✨ I brought the most beautiful girl in the world to the tallest observation wheel, Ain Dubai. 🗺️❤️ She really didn't know that I was going to propose to her with a letter. 📜🤫 I just grabbed her hand 🤝 and passed her this letter and everything you can see in this video is how she went from being my girlfriend into my life's beautiful joy of the happiest life forever. 💖💍👩‍❤️‍👨 There are a lot of promises and lifelong commitments I've written in that letter, 📝🔒 and everything can be felt through this video, again and again. 🔄🥺 It truly feels like a once-in-a-lifetime moment. 🕊️✨",
   match: 100,
-  year: 2026,
+  year: 2025,
   rating: "LVR-Only",
-  tags: ["Romantic", "Wholesome", "Real"],
-  // 🔧 PLACEHOLDER — replace with your own couple video/photo
-  video: "media/videos/hero.mp4",
-  poster: "media/photos/hero.jpg",
+  tags: ["Romantic", "Milestone", "Engagement"],
+  video: "media/videos/proposal.mp4",
+  poster: "media/photos/proposal.jpg",
+  aspect: "540/960",
 };
 
 // ---------------------------------------------------------------------------
@@ -55,70 +55,62 @@ const HERO = {
 // ---------------------------------------------------------------------------
 const VIDEOS = [
   {
-    id: "v1",
-    title: "The Day We Met", // 🔧 PLACEHOLDER
-    thumbnail: "media/photos/v1.jpg",
-    video: "media/videos/v1.mp4",
-    year: 2025,
-    match: 99,
+    id: "before-met-talk",
+    title: "", // intentionally blank — no on-screen title for this clip
+    thumbnail: "media/photos/before-met-talk.jpg",
+    video: "media/videos/before-met-talk.mp4",
+    year: 2024,
+    match: 100,
     rating: "LVR-Only",
-    duration: "1m 12s",
-    tags: ["Romantic", "First Date", "Nostalgic"],
+    duration: "0m 38s",
+    tags: ["Long Distance", "Romantic"],
+    aspect: "444/960",
     description:
-      "Where it all began — the nervous laughs, the terrible jokes, and the moment we both knew this was different.", // 🔧 PLACEHOLDER
+      "📞 Always fill with love talking 24/7 from London to Dubai. 🇬🇧✈️🇦🇪 You are the only love and support 💕 that really fill me during my emptiness. 🫂 You really complete me my dear with pure heart soul ✨ Such a loving caring and always chasing on this relationship. 🏃‍♂️❤️ We are getting closer to closer to each other….. ⚡️💞",
   },
   {
-    id: "v2",
-    title: "Weekend Getaway",
-    thumbnail: "media/photos/v2.jpg",
-    video: "media/videos/v2.mp4",
+    id: "first-met-welcome",
+    title: "",
+    thumbnail: "media/photos/first-met-welcome.jpg",
+    video: "media/videos/first-met-welcome.mp4",
+    year: 2024,
+    match: 100,
+    rating: "LVR-Only",
+    duration: "0m 43s",
+    tags: ["First Meeting", "Romantic", "Wholesome"],
+    aspect: "540/960",
+    description:
+      "🤵‍♂️ A man is nervously waiting for his girl, 💓 Holding a bunch of rose bouquet 💐 and smiling towards her when He saw the beautiful Gorgeous A stunning ladies wearing in the black dress outfit at DXB-3, 🖤✈️ Nervously and Shy at the same time 🙈 run towards her handover the rose bouquet 💐 and welcome her with hand decor of rose Patels. 🌹✨",
+  },
+  {
+    id: "count-dates",
+    title: "",
+    thumbnail: "media/photos/count-dates.jpg",
+    video: "media/videos/count-dates.mp4",
+    year: 2024,
+    match: 99,
+    rating: "LVR-Only",
+    duration: "0m 20s",
+    tags: ["Romantic", "Adventure"],
+    aspect: "540/960",
+    description:
+      "🗓️ I counted days, I counted miles 🛣️ To see you there, to see you there 👀 It's been a long time coming, but ⏳ It's you and me, that's my whole world 🌍 They whisper in the hallway, \"She's 👥 a best, best love girl\" (Okay) 👑 The whole universe is rolling fake dice 🎲 You play love life, you win then best prizes 🏆❤️ It's you and me, there's nothing like this ♾️ Miss Verma and The Love Princess 👸❤️👸",
+  },
+  {
+    id: "tiktok",
+    title: "",
+    thumbnail: "media/photos/tiktok.jpg",
+    video: "media/videos/tiktok.mp4",
     year: 2025,
     match: 98,
     rating: "LVR-Only",
-    duration: "2m 04s",
-    tags: ["Adventure", "Travel", "Comedy"],
+    duration: "0m 17s",
+    tags: ["Fun", "Candid"],
+    aspect: "540/960",
     description:
-      "That impromptu road trip where we got lost twice and didn't mind at all.", // 🔧 PLACEHOLDER
+      "📱 It is one of first tik tok of my life with the most amazing person. 🥰 There are a lot of shooting content together left for the future. 🎬📸 Dyingly missing 🥺 and waiting for you to come over here and shoot more Tik Tok content, fun content together like this. ✨ Can't get over this beautiful sweet memories. 🍭❤️",
   },
-  {
-    id: "v3",
-    title: "Cooking Fails (Season 1)",
-    thumbnail: "media/photos/v3.jpg",
-    video: "media/videos/v3.mp4",
-    year: 2025,
-    match: 96,
-    rating: "LVR-Only",
-    duration: "0m 58s",
-    tags: ["Comedy", "Wholesome"],
-    description:
-      "Proof that we should probably just order takeout, and that we'll laugh about it either way.", // 🔧 PLACEHOLDER
-  },
-  {
-    id: "v4",
-    title: "Late Night Talks",
-    thumbnail: "media/photos/v4.jpg",
-    video: "media/videos/v4.mp4",
-    year: 2025,
-    match: 100,
-    rating: "LVR-Only",
-    duration: "1m 30s",
-    tags: ["Wholesome", "Real", "Romantic"],
-    description:
-      "The 2am conversations about everything and nothing that somehow became our favorite part of the day.", // 🔧 PLACEHOLDER
-  },
-  {
-    id: "v5",
-    title: "Dancing In The Kitchen",
-    thumbnail: "media/photos/v5.jpg",
-    video: "media/videos/v5.mp4",
-    year: 2026,
-    match: 97,
-    rating: "LVR-Only",
-    duration: "0m 45s",
-    tags: ["Comedy", "Romantic"],
-    description:
-      "No music required, terrible rhythm optional, good mood guaranteed.", // 🔧 PLACEHOLDER
-  },
+  // 🔧 9 more videos to come — copy the shape above for each new one.
 ];
 
 // ---------------------------------------------------------------------------

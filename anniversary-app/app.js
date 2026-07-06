@@ -157,6 +157,7 @@
   function createCard(item, type, variant) {
     const card = document.createElement("div");
     card.className = "media-card" + (variant === "grid" ? " grid-card" : "");
+    card.style.aspectRatio = item.aspect || "16/9";
     card.tabIndex = 0;
 
     const isVideo = type === "video";
@@ -180,7 +181,7 @@
       mediaEl = document.createElement("img");
       mediaEl.src = thumb;
       mediaEl.loading = "lazy";
-      mediaEl.alt = item.title;
+      mediaEl.alt = item.title || item.description || "memory photo";
     }
     card.appendChild(mediaEl);
 
@@ -196,10 +197,12 @@
     badge.textContent = `${item.match}% Match`;
     card.appendChild(badge);
 
-    const overlay = document.createElement("div");
-    overlay.className = "card-overlay";
-    overlay.innerHTML = `<div class="card-title">${item.title}</div>`;
-    card.appendChild(overlay);
+    if (item.title) {
+      const overlay = document.createElement("div");
+      overlay.className = "card-overlay";
+      overlay.innerHTML = `<div class="card-title">${item.title}</div>`;
+      card.appendChild(overlay);
+    }
 
     card.addEventListener("click", () => openModal(item, type));
     card.addEventListener("keydown", (e) => {
@@ -257,14 +260,17 @@
     } else {
       const img = document.createElement("img");
       img.src = item.image;
-      img.alt = item.title;
+      img.alt = item.title || item.description || "memory photo";
       modalMedia.appendChild(img);
     }
+    modalMedia.style.aspectRatio = item.aspect || "16/9";
 
     $("#modal-match").textContent = `${item.match}% Match`;
     $("#modal-year").textContent = item.year;
     $("#modal-rating").textContent = item.rating;
-    $("#modal-title").textContent = item.title;
+    const modalTitleEl = $("#modal-title");
+    modalTitleEl.textContent = item.title || "";
+    modalTitleEl.classList.toggle("hidden", !item.title);
     $("#modal-description").textContent = item.description;
 
     const tagsWrap = $("#modal-tags");
@@ -299,11 +305,16 @@
   // ------------------------------------------------------------------
   function setupHero() {
     const video = $("#hero-video");
+    const videoBg = $("#hero-video-bg");
     video.src = HERO.video;
     video.poster = HERO.poster;
+    videoBg.src = HERO.video;
+    videoBg.poster = HERO.poster;
 
     $("#hero-tag").textContent = HERO.tag;
-    $("#hero-title").textContent = HERO.title;
+    const heroTitleEl = $("#hero-title");
+    heroTitleEl.textContent = HERO.title || "";
+    heroTitleEl.classList.toggle("hidden", !HERO.title);
     $("#hero-description").textContent = HERO.description;
 
     $("#hero-play-btn").addEventListener("click", () => {
