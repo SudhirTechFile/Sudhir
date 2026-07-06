@@ -181,7 +181,62 @@ const VIDEOS = [
     description:
       "🏜️ Come here and again let's go lost into the desert again, 🌵 joy with the endless fun ride 🏎️💨 with your tide hug 🫂 and enjoying the beautiful scenery in the middle of desert. 🌅💛",
   },
-  // 🔧 4 more videos to come — copy the shape above for each new one.
+  {
+    id: "burj-khalifa",
+    title: "",
+    thumbnail: "media/photos/burj-khalifa.jpg",
+    video: "media/videos/burj-khalifa.mp4",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    duration: "1m 29s",
+    tags: ["Romantic", "Sightseeing"],
+    aspect: "1280/960",
+    description:
+      "🏙️ We are expressing about our love and the how she is feeling after meeting with me ❤️ and going to the top the Burj Khalifa world tallest building. 🗼✨ Having a romantic and beautiful Peace of Mind 🧘‍♂️💖 and the time that we spent over and with this beautiful sweet memory talk. 🗣️💞",
+  },
+  {
+    id: "dubai-diary",
+    title: "",
+    thumbnail: "media/photos/dubai-diary.jpg",
+    video: "media/videos/dubai-diary.mp4",
+    year: 2026,
+    match: 100,
+    rating: "LVR-Only",
+    duration: "1m 03s",
+    tags: ["Milestone", "Romantic"],
+    aspect: "540/960",
+    description:
+      "💖 A memory love story collection from Dubai. ✨ This one year feel amazing with so many up and down 📈📉 but still we are being together 👩‍❤️‍👨 and brining so many things for the future. 🔮 Your are the love of my life 🥰 that bring so much love energy into our life ❤️‍🔥 and can't get over you all of those memory in our life. 📸 Niruu is the love of my life… 💍👩‍❤️‍💋‍👩",
+  },
+  {
+    id: "emotional-talk",
+    title: "",
+    thumbnail: "media/photos/emotional-talk.jpg",
+    video: "media/videos/emotional-talk.mp4",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    duration: "2m 45s",
+    tags: ["Romantic", "Real"],
+    aspect: "1706/960",
+    description:
+      "🥺 It is one of the cutest love moment of our days. ❤️ I am saying so so sorry 🙇‍♂️ and kissing you every where, 💋 bring you the best date night turn into emotional days 🌙✨ and such a love bonding moment. 🤝💞 I am really sorry for that I can't wait Hold you kiss and make you feel you are really mine 🫂💋 and I won't let you go anywhere babby. 🙅‍♂️❤️ It is also become once in life time curtness love emotional talk of ours love story. 📖❤️",
+  },
+  {
+    id: "all-yours-niruu",
+    title: "",
+    thumbnail: "media/photos/all-yours-niruu.jpg",
+    video: "media/videos/all-yours-niruu.mp4",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    duration: "0m 38s",
+    tags: ["Romantic", "Love Notes"],
+    aspect: "540/960",
+    description:
+      "💋 Love notes moment of us where kissing and loving isn't get enough for us. 💋 Missing you more than anything babby. 🥺 Come to me soon…….. ✈️❤️",
+  },
 ];
 
 // ---------------------------------------------------------------------------

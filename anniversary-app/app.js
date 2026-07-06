@@ -306,9 +306,17 @@
   function setupHero() {
     const video = $("#hero-video");
     const videoBg = $("#hero-video-bg");
-    video.src = HERO.video;
+    const heroSection = $("#hero-section");
+    if (HERO.video) {
+      video.src = HERO.video;
+      videoBg.src = HERO.video;
+      heroSection.style.backgroundImage = "";
+    } else {
+      video.style.display = "none";
+      videoBg.style.display = "none";
+      heroSection.style.backgroundImage = `url("${HERO.poster}")`;
+    }
     video.poster = HERO.poster;
-    videoBg.src = HERO.video;
     videoBg.poster = HERO.poster;
 
     $("#hero-tag").textContent = HERO.tag;
