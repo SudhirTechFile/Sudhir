@@ -248,6 +248,8 @@ html {
 .modal-box {
   animation: modalIn 0.25s ease both;
   max-height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 @media (min-width: 768px) {
   .modal-box { max-height: 90vh; }
