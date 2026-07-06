@@ -41,3 +41,4 @@ Everything content-related lives in **`data.js`** — you don't need to touch
 - `style.css` — Netflix-style visual polish (card hover-zoom, row arrows, animations)
 - `data.js` — **all your content** (edit this one)
 - `app.js` — app logic (login, tabs, modal, rows) — reads everything from `data.js`
+
