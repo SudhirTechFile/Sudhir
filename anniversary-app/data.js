@@ -97,6 +97,21 @@ const VIDEOS = [
       "🗓️ I counted days, I counted miles 🛣️ To see you there, to see you there 👀 It's been a long time coming, but ⏳ It's you and me, that's my whole world 🌍 They whisper in the hallway, \"She's 👥 a best, best love girl\" (Okay) 👑 The whole universe is rolling fake dice 🎲 You play love life, you win then best prizes 🏆❤️ It's you and me, there's nothing like this ♾️ Miss Verma and The Love Princess 👸❤️👸",
   },
   {
+    id: "mine-cinderella",
+    title: "",
+    thumbnail: "media/photos/mine-cinderella.jpg",
+    video: "media/videos/mine-cinderella.mp4",
+    year: 2025,
+    match: 98,
+    rating: "LVR-Only",
+    duration: "0m 17s",
+    tags: ["Fairytale", "Sweet"],
+    aspect: "540/960",
+    // 🔧 PLACEHOLDER — write your own caption for this one whenever you're ready
+    description:
+      "👑 From watching Cinderella's fairytale as a kid to living my own real one with you. ✨ Some stories really do come true. 💫🏰❤️",
+  },
+  {
     id: "tiktok",
     title: "",
     thumbnail: "media/photos/tiktok.jpg",
@@ -104,13 +119,69 @@ const VIDEOS = [
     year: 2025,
     match: 98,
     rating: "LVR-Only",
-    duration: "0m 17s",
+    duration: "0m 36s",
     tags: ["Fun", "Candid"],
-    aspect: "540/960",
+    aspect: "542/960",
     description:
       "📱 It is one of first tik tok of my life with the most amazing person. 🥰 There are a lot of shooting content together left for the future. 🎬📸 Dyingly missing 🥺 and waiting for you to come over here and shoot more Tik Tok content, fun content together like this. ✨ Can't get over this beautiful sweet memories. 🍭❤️",
   },
-  // 🔧 9 more videos to come — copy the shape above for each new one.
+  {
+    id: "singinlove",
+    title: "",
+    thumbnail: "media/photos/singinlove.jpg",
+    video: "media/videos/singinlove.mp4",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    duration: "0m 41s",
+    tags: ["Romantic", "Cuddles", "Wholesome"],
+    aspect: "540/960",
+    description:
+      "🎶 One of the cutest cuddle in making love into my arm, 🫂 feel you and hold you tide 🔒 that I will be with you lifetime coz you got all my love……. 💖♾️",
+  },
+  {
+    id: "cutecute",
+    title: "",
+    thumbnail: "media/photos/cutecute.jpg",
+    video: "media/videos/cutecute.mp4",
+    year: 2026,
+    match: 100,
+    rating: "LVR-Only",
+    duration: "1m 02s",
+    tags: ["Romantic", "Milestone"],
+    aspect: "540/960",
+    description:
+      "💖 The best part of the life is hearing of you saying \"I love you Sudhir\". 🥰 This is one of the most memorable and cute romanticizing video of our life till now. 👩‍❤️‍👨✨ A lot more fun and Love is coming in the future. 🌟 Can't wait Make a lot of memory again and again. 🔄📸 I can even believe that this is almost a year now. 🗓️💞",
+  },
+  {
+    id: "ourmoment",
+    title: "",
+    thumbnail: "media/photos/ourmoment.jpg",
+    video: "media/videos/ourmoment.mp4",
+    year: 2025,
+    match: 99,
+    rating: "LVR-Only",
+    duration: "0m 51s",
+    tags: ["Romantic", "Date Night"],
+    aspect: "540/960",
+    description:
+      "💞 It is our moment where all the background lighting affect ✨ Sure the pure showering of love on us. 🌧️❤️ I love you Infinity ♾️ I love you more than anything 🌎 I love you till the end 🏁 I love you on everything. 💘",
+  },
+  {
+    id: "endless-desert",
+    title: "",
+    thumbnail: "media/photos/endless-desert.jpg",
+    video: "media/videos/endless-desert.mp4",
+    year: 2025,
+    match: 97,
+    rating: "LVR-Only",
+    duration: "0m 38s",
+    tags: ["Adventure", "Travel"],
+    aspect: "1706/960",
+    description:
+      "🏜️ Come here and again let's go lost into the desert again, 🌵 joy with the endless fun ride 🏎️💨 with your tide hug 🫂 and enjoying the beautiful scenery in the middle of desert. 🌅💛",
+  },
+  // 🔧 4 more videos to come — copy the shape above for each new one.
 ];
 
 // ---------------------------------------------------------------------------
