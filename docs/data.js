@@ -237,6 +237,48 @@ const VIDEOS = [
     description:
       "💋 Love notes moment of us where kissing and loving isn't get enough for us. 💋 Missing you more than anything babby. 🥺 Come to me soon…….. ✈️❤️",
   },
+  {
+    id: "all-celebrating",
+    title: "",
+    thumbnail: "media/photos/all-celebrating.jpg",
+    video: "media/videos/all-celebrating.mp4",
+    year: 2026,
+    match: 100,
+    rating: "LVR-Only",
+    duration: "4m 24s",
+    tags: ["Milestone", "Romantic"],
+    aspect: "540/960",
+    description:
+      "This is the diary of whatever we have celebrating so far till now. 📖❤️ You are my life goal milestone 🏆 That will drive our life to chase on each other day by day. 🏃‍♂️💞 The love is getting deeper into deeper 🌊💘 and I can make a lot of effort and a lot of workload for us to build a very great future. 🏗️🔮 Just be with me and keep celebrating the every single moment 🥂 and every highest and low together 📈📉 so we will be make it on for the future. 🫂✨ I really love you so much 🥰 and can't wait to hug you again. 🫂❤️",
+  },
+  {
+    id: "desi-girl",
+    title: "",
+    thumbnail: "media/photos/desi-girl.jpg",
+    video: "media/videos/desi-girl.mp4",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    duration: "0m 09s",
+    tags: ["Romantic", "Traditional"],
+    aspect: "540/960",
+    description:
+      "👑 My Queen is showing off the love Hennah 🌿✨ that is way beyond beautiful with Indian look. 🇮🇳💃 You are beauty make me blush 😳💕 and take my breath away 🫁❤️ and always loving you is not getting over enough. ♾️💋 Let's have a Indian look together in future 👩‍❤️‍👨🥻 and make cute video like this more 🎬💖 so that I can add it up into ourflix diary. 📺🎞️",
+  },
+  {
+    id: "sunflower",
+    title: "",
+    thumbnail: "media/photos/sunflower.jpg",
+    video: "media/videos/sunflower.mp4",
+    year: 2026,
+    match: 100,
+    rating: "LVR-Only",
+    duration: "0m 09s",
+    tags: ["Romantic", "Sweet"],
+    aspect: "540/960",
+    description:
+      "🌻 The theory of sunflower is you already know that, 💛 You are the way beyond of the love ✨ and Even though I will be far away 🛣️✈️ you will always be my sunshine ☀️ and you'll always be my love. 👑💞 Always being with you and loving you 🥰 I'll coming to you very soon ⏳✈️ or we are going to be together very soon 👩‍❤️‍👨 with that promise this flower is bring you a anniversary blessing. 🌻💍✨",
+  },
 ];
 
 // ---------------------------------------------------------------------------
