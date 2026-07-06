@@ -42,3 +42,4 @@ Everything content-related lives in **`data.js`** — you don't need to touch
 - `data.js` — **all your content** (edit this one)
 - `app.js` — app logic (login, tabs, modal, rows) — reads everything from `data.js`
 
+
