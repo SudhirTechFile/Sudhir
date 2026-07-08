@@ -282,68 +282,68 @@ const VIDEOS = [
 ];
 
 // ---------------------------------------------------------------------------
-// ROW 2 — AWARD-WINNING PHOTOS
+// ROW 2 — LOVE STORY MOMENT
 // ---------------------------------------------------------------------------
 const PHOTOS = [
   {
-    id: "p1",
-    title: "First Selfie Together",
-    image: "media/photos/p1.jpg",
+    id: "proposal-moment",
+    title: "A Forehead Kiss at the Top of the World",
+    image: "media/photos/proposal-moment.jpg",
     year: 2025,
     match: 100,
     rating: "LVR-Only",
-    tags: ["Romantic", "Nostalgic"],
-    description: "The very first photo of us. Bad lighting, perfect moment.", // 🔧 PLACEHOLDER
+    aspect: "1500/2000",
+    tags: ["Romantic", "Dubai", "Ain Dubai"],
+    description:
+      "High above the sea, with my letter finally in your hands and your head resting on my shoulder — that was the moment my heart knew for sure. No grand words needed, just this quiet, safe kind of love. One year down, a whole lifetime to go. 🤍💕✨",
   },
   {
-    id: "p2",
-    title: "Beach Day",
-    image: "media/photos/p2.jpg",
+    id: "ce-la-vi-night",
+    title: "Under the Roses & the Burj Khalifa",
+    image: "media/photos/ce-la-vi-night.jpg",
     year: 2025,
     match: 99,
     rating: "LVR-Only",
-    tags: ["Adventure", "Travel"],
-    description: "Sunburnt, sandy, and completely happy.", // 🔧 PLACEHOLDER
+    aspect: "1500/2000",
+    tags: ["Date Night", "Dubai", "CÉ LA VI"],
+    description:
+      "Beneath a canopy of roses with the Burj Khalifa glowing behind us, it felt like the whole city dressed up just for our night. Glasses raised, hearts fuller than ever — this is the kind of magic I once only dreamed about. And I got to live it with you. 🌹🥂❤️😍",
   },
   {
-    id: "p3",
-    title: "That Fancy Dinner",
-    image: "media/photos/p3.jpg",
+    id: "sweetest-celebration",
+    title: "Sweetest Celebration",
+    image: "media/photos/best-dessert-night.jpg",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    aspect: "1500/2000",
+    tags: ["Celebration", "Dessert", "CÉ LA VI"],
+    description:
+      "This little chocolate dome tasted like everything we'd been working toward, finally coming true. Every \"congratulations\" on that plate felt like the universe cheering us on. Here's to celebrating a hundred more wins side by side. 🍫✨💖🥂",
+  },
+  {
+    id: "distance-couldnt-dim-us",
+    title: "Distance Couldn't Dim Us",
+    image: "media/photos/facetime-call.jpg",
     year: 2025,
     match: 98,
     rating: "LVR-Only",
-    tags: ["Romantic", "Special Occasion"],
-    description: "We dressed up, ordered too much, and didn't regret a bite.", // 🔧 PLACEHOLDER
+    aspect: "923/2000",
+    tags: ["FaceTime", "Long Distance", "Us"],
+    description:
+      "Some of our sweetest moments happened through a little screen, oceans and time zones between us. But even pixelated and far apart, your face was still my favorite place to land at the end of a day. One year later, I'm grateful we never let the distance write our ending. 💛📱💞",
   },
   {
-    id: "p4",
-    title: "Silly Face Contest",
-    image: "media/photos/p4.jpg",
-    year: 2025,
-    match: 95,
-    rating: "LVR-Only",
-    tags: ["Comedy", "Wholesome"],
-    description: "Nobody won. Everybody lost. It was perfect.", // 🔧 PLACEHOLDER
-  },
-  {
-    id: "p5",
-    title: "Rainy Day Cuddles",
-    image: "media/photos/p5.jpg",
+    id: "purse-flower",
+    title: "Beauty That Defines the Flower",
+    image: "media/photos/purse-flower.jpg",
     year: 2026,
     match: 100,
     rating: "LVR-Only",
-    tags: ["Wholesome", "Romantic"],
-    description: "Best plans are sometimes no plans at all.", // 🔧 PLACEHOLDER
-  },
-  {
-    id: "p6",
-    title: "Concert Night",
-    image: "media/photos/p6.jpg",
-    year: 2026,
-    match: 97,
-    rating: "LVR-Only",
-    tags: ["Adventure", "Comedy"],
-    description: "We didn't know the words but we sang them anyway.", // 🔧 PLACEHOLDER
+    aspect: "1500/2000",
+    tags: ["Flowers", "Surprise", "Niruu"],
+    description:
+      "A little bag of blooms, a small note, and the biggest smile I could ever ask to come home to. My love, you don't just hold the flowers — beauty like yours is what defines them. From your only one, always: you are, and will always be, the best. 🌸💕🥰",
   },
 ];
 
