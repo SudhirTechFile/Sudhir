@@ -30,8 +30,28 @@
   const mobileNav = $("#mobile-nav");
 
   const mediaModal = $("#media-modal");
+  const modalBox = $(".modal-box");
   const modalMedia = $("#modal-media");
   const modalClose = $("#modal-close");
+  const modalStickers = $("#modal-stickers");
+
+  const STICKER_EMOJIS = ["❤️", "💕", "💖", "💗", "😍", "💘", "✨", "😘"];
+
+  function spawnModalStickers() {
+    modalStickers.innerHTML = "";
+    modalStickers.classList.remove("hidden");
+    const count = 10;
+    for (let i = 0; i < count; i++) {
+      const s = document.createElement("span");
+      s.className = "modal-sticker";
+      s.textContent = STICKER_EMOJIS[Math.floor(Math.random() * STICKER_EMOJIS.length)];
+      s.style.left = 5 + Math.random() * 85 + "%";
+      s.style.top = 5 + Math.random() * 80 + "%";
+      s.style.animationDelay = Math.random() * 0.5 + "s";
+      s.style.fontSize = 1.2 + Math.random() * 1.4 + "rem";
+      modalStickers.appendChild(s);
+    }
+  }
 
   let heartInterval = null;
 
@@ -246,6 +266,9 @@
   // ------------------------------------------------------------------
   function openModal(item, type) {
     modalMedia.innerHTML = "";
+    modalStickers.innerHTML = "";
+    modalStickers.classList.add("hidden");
+    modalBox.classList.toggle("love-pop", type === "photo");
 
     if (type === "video") {
       const video = document.createElement("video");
@@ -284,11 +307,18 @@
 
     mediaModal.classList.remove("hidden");
     document.body.style.overflow = "hidden";
+
+    if (type === "photo") {
+      spawnModalStickers();
+    }
   }
 
   function closeModal() {
     mediaModal.classList.add("hidden");
     modalMedia.innerHTML = "";
+    modalStickers.innerHTML = "";
+    modalStickers.classList.add("hidden");
+    modalBox.classList.remove("love-pop");
     document.body.style.overflow = "";
   }
 
