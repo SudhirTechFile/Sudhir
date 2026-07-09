@@ -286,6 +286,66 @@ const VIDEOS = [
 // ---------------------------------------------------------------------------
 const PHOTOS = [
   {
+    id: "our-love-story",
+    title: "From Fresh Petals to Forever",
+    image: "media/photos/our-love-story.jpg",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    aspect: "1350/1688",
+    tags: ["Romantic", "Flowers", "Keepsake"],
+    description:
+      "You gave me roses, and instead of letting them fade, we kept them just like we've kept every promise to each other. Some flowers wilt, but what we have only grows deeper with time. From that first bouquet to forever, I choose you. 🌹💕🥰✨",
+  },
+  {
+    id: "love-letter",
+    title: "To My Dearest One & Only Niruu",
+    image: "media/photos/love-letter.jpg",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    aspect: "1462/1644",
+    tags: ["Love Letter", "Romantic", "Proposal"],
+    description:
+      "Every word on this page came straight from the deepest part of my heart — no filter, just truth. This letter holds my past, my present, and every future I want to spend beside you. My love, my word felt incomplete before you; you're the sentence I never want to end. 💌💖✨",
+  },
+  {
+    id: "ram-mandir",
+    title: "Blessed From God",
+    image: "media/photos/ram-mandir.jpg",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    aspect: "1500/844",
+    tags: ["Faith", "Family", "Blessed"],
+    description:
+      "Before every big step, we bowed our heads together and asked for blessings on our journey. Our love isn't just ours — it's held by faith, family, and something far greater than us. Grateful today, and every day, for the divine grace watching over what we're building. 🙏🌼💛",
+  },
+  {
+    id: "perfect-love-story-collage",
+    title: "Our Perfect Love Story",
+    image: "media/photos/perfect-love-story-collage.jpg",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    aspect: "896/1195",
+    tags: ["Milestone", "Collage", "Us"],
+    description:
+      "Every little frame here is a chapter we wrote together — the giggles, the getaways, the quiet in-betweens. Looking back at it all, I can't believe how much love we packed into one single year. This is only the beginning of our story, my love. 💫💕🌟",
+  },
+  {
+    id: "ain-dubai-view",
+    title: "The Way You Look At Me",
+    image: "media/photos/ain-dubai-view.jpg",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    aspect: "1500/2000",
+    tags: ["Ain Dubai", "Romantic", "Skyline"],
+    description:
+      "With the whole Dubai skyline behind us, all I could see was you. This is the look I never want to stop giving — the one that says there's nowhere else I'd rather be. One year in, and you're still my favorite view. 🤍😍💕",
+  },
+  {
     id: "proposal-moment",
     title: "A Forehead Kiss at the Top of the World",
     image: "media/photos/proposal-moment.jpg",
