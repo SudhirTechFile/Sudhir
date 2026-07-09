@@ -1,0 +1,467 @@
+/* =========================================================================
+   OURFLIX — DATA FILE
+   -------------------------------------------------------------------------
+   This is the ONLY file you should need to edit to make this your own.
+   Swap every placeholder image/video URL below for your own files.
+
+   HOW TO USE YOUR OWN MEDIA:
+   1. Drop your video files into  media/videos/  and photos into media/photos/
+   2. Change the "src" / "thumbnail" / "image" fields below to point at them,
+      e.g.  src: "media/videos/beach-day.mp4"
+            thumbnail: "media/photos/beach-day-cover.jpg"
+   3. Edit the titles, descriptions, tags, years etc. to match your memories.
+
+   Everything marked with 🔧 PLACEHOLDER is temporary demo content — replace
+   it before sharing the final gift.
+   ========================================================================= */
+
+// ---------------------------------------------------------------------------
+// SITE-WIDE SETTINGS
+// ---------------------------------------------------------------------------
+const SITE_CONFIG = {
+  // The password required to enter the app.
+  password: "6072025",
+
+  // The name shown on the profile the user clicks to log in.
+  profileName: "Our Story", // 🔧 PLACEHOLDER — e.g. "Sudhir & Ma"
+
+  // Logo text in the top-left navbar.
+  logoText: "OURFLIX", // 🔧 PLACEHOLDER — e.g. "MEMORIES"
+
+  // Message shown in the big animated overlay right after a correct login.
+  anniversaryMessage: "Happy 1 Year Anniversary! ❤️",
+  anniversarySubMessage: "Here's to us, and everything still to come.",
+};
+
+// ---------------------------------------------------------------------------
+// HERO / FEATURED BILLBOARD  (top of the Home tab)
+// ---------------------------------------------------------------------------
+const HERO = {
+  title: "", // intentionally blank — no on-screen title for this clip
+  tag: "OURFLIX ORIGINAL",
+  description:
+    "This is the story of my proposal from exactly one year ago. 🎡✨ I brought the most beautiful girl in the world to the tallest observation wheel, Ain Dubai. 🗺️❤️ She really didn't know that I was going to propose to her with a letter. 📜🤫 I just grabbed her hand 🤝 and passed her this letter and everything you can see in this video is how she went from being my girlfriend into my life's beautiful joy of the happiest life forever. 💖💍👩‍❤️‍👨 There are a lot of promises and lifelong commitments I've written in that letter, 📝🔒 and everything can be felt through this video, again and again. 🔄🥺 It truly feels like a once-in-a-lifetime moment. 🕊️✨",
+  match: 100,
+  year: 2025,
+  rating: "LVR-Only",
+  tags: ["Romantic", "Milestone", "Engagement"],
+  video: "media/videos/proposal.mp4",
+  poster: "media/photos/proposal.jpg",
+  aspect: "540/960",
+};
+
+// ---------------------------------------------------------------------------
+// ROW 1 — TRENDING NOW (Our Favorite Videos)
+// ---------------------------------------------------------------------------
+const VIDEOS = [
+  {
+    id: "before-met-talk",
+    title: "", // intentionally blank — no on-screen title for this clip
+    thumbnail: "media/photos/before-met-talk.jpg",
+    video: "media/videos/before-met-talk.mp4",
+    year: 2024,
+    match: 100,
+    rating: "LVR-Only",
+    duration: "0m 38s",
+    tags: ["Long Distance", "Romantic"],
+    aspect: "444/960",
+    description:
+      "📞 Always fill with love talking 24/7 from London to Dubai. 🇬🇧✈️🇦🇪 You are the only love and support 💕 that really fill me during my emptiness. 🫂 You really complete me my dear with pure heart soul ✨ Such a loving caring and always chasing on this relationship. 🏃‍♂️❤️ We are getting closer to closer to each other….. ⚡️💞",
+  },
+  {
+    id: "first-met-welcome",
+    title: "",
+    thumbnail: "media/photos/first-met-welcome.jpg",
+    video: "media/videos/first-met-welcome.mp4",
+    year: 2024,
+    match: 100,
+    rating: "LVR-Only",
+    duration: "0m 43s",
+    tags: ["First Meeting", "Romantic", "Wholesome"],
+    aspect: "540/960",
+    description:
+      "🤵‍♂️ A man is nervously waiting for his girl, 💓 Holding a bunch of rose bouquet 💐 and smiling towards her when He saw the beautiful Gorgeous A stunning ladies wearing in the black dress outfit at DXB-3, 🖤✈️ Nervously and Shy at the same time 🙈 run towards her handover the rose bouquet 💐 and welcome her with hand decor of rose Patels. 🌹✨",
+  },
+  {
+    id: "count-dates",
+    title: "",
+    thumbnail: "media/photos/count-dates.jpg",
+    video: "media/videos/count-dates.mp4",
+    year: 2024,
+    match: 99,
+    rating: "LVR-Only",
+    duration: "0m 20s",
+    tags: ["Romantic", "Adventure"],
+    aspect: "540/960",
+    description:
+      "🗓️ I counted days, I counted miles 🛣️ To see you there, to see you there 👀 It's been a long time coming, but ⏳ It's you and me, that's my whole world 🌍 They whisper in the hallway, \"She's 👥 a best, best love girl\" (Okay) 👑 The whole universe is rolling fake dice 🎲 You play love life, you win then best prizes 🏆❤️ It's you and me, there's nothing like this ♾️ Miss Verma and The Love Princess 👸❤️👸",
+  },
+  {
+    id: "mine-cinderella",
+    title: "",
+    thumbnail: "media/photos/mine-cinderella.jpg",
+    video: "media/videos/mine-cinderella.mp4",
+    year: 2025,
+    match: 98,
+    rating: "LVR-Only",
+    duration: "0m 17s",
+    tags: ["Fairytale", "Sweet"],
+    aspect: "540/960",
+    // 🔧 PLACEHOLDER — write your own caption for this one whenever you're ready
+    description:
+      "👑 From watching Cinderella's fairytale as a kid to living my own real one with you. ✨ Some stories really do come true. 💫🏰❤️",
+  },
+  {
+    id: "tiktok",
+    title: "",
+    thumbnail: "media/photos/tiktok.jpg",
+    video: "media/videos/tiktok.mp4",
+    year: 2025,
+    match: 98,
+    rating: "LVR-Only",
+    duration: "0m 36s",
+    tags: ["Fun", "Candid"],
+    aspect: "542/960",
+    description:
+      "📱 It is one of first tik tok of my life with the most amazing person. 🥰 There are a lot of shooting content together left for the future. 🎬📸 Dyingly missing 🥺 and waiting for you to come over here and shoot more Tik Tok content, fun content together like this. ✨ Can't get over this beautiful sweet memories. 🍭❤️",
+  },
+  {
+    id: "singinlove",
+    title: "",
+    thumbnail: "media/photos/singinlove.jpg",
+    video: "media/videos/singinlove.mp4",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    duration: "0m 41s",
+    tags: ["Romantic", "Cuddles", "Wholesome"],
+    aspect: "540/960",
+    description:
+      "🎶 One of the cutest cuddle in making love into my arm, 🫂 feel you and hold you tide 🔒 that I will be with you lifetime coz you got all my love……. 💖♾️",
+  },
+  {
+    id: "cutecute",
+    title: "",
+    thumbnail: "media/photos/cutecute.jpg",
+    video: "media/videos/cutecute.mp4",
+    year: 2026,
+    match: 100,
+    rating: "LVR-Only",
+    duration: "1m 02s",
+    tags: ["Romantic", "Milestone"],
+    aspect: "540/960",
+    description:
+      "💖 The best part of the life is hearing of you saying \"I love you Sudhir\". 🥰 This is one of the most memorable and cute romanticizing video of our life till now. 👩‍❤️‍👨✨ A lot more fun and Love is coming in the future. 🌟 Can't wait Make a lot of memory again and again. 🔄📸 I can even believe that this is almost a year now. 🗓️💞",
+  },
+  {
+    id: "ourmoment",
+    title: "",
+    thumbnail: "media/photos/ourmoment.jpg",
+    video: "media/videos/ourmoment.mp4",
+    year: 2025,
+    match: 99,
+    rating: "LVR-Only",
+    duration: "0m 51s",
+    tags: ["Romantic", "Date Night"],
+    aspect: "540/960",
+    description:
+      "💞 It is our moment where all the background lighting affect ✨ Sure the pure showering of love on us. 🌧️❤️ I love you Infinity ♾️ I love you more than anything 🌎 I love you till the end 🏁 I love you on everything. 💘",
+  },
+  {
+    id: "endless-desert",
+    title: "",
+    thumbnail: "media/photos/endless-desert.jpg",
+    video: "media/videos/endless-desert.mp4",
+    year: 2025,
+    match: 97,
+    rating: "LVR-Only",
+    duration: "0m 38s",
+    tags: ["Adventure", "Travel"],
+    aspect: "1706/960",
+    description:
+      "🏜️ Come here and again let's go lost into the desert again, 🌵 joy with the endless fun ride 🏎️💨 with your tide hug 🫂 and enjoying the beautiful scenery in the middle of desert. 🌅💛",
+  },
+  {
+    id: "burj-khalifa",
+    title: "",
+    thumbnail: "media/photos/burj-khalifa.jpg",
+    video: "media/videos/burj-khalifa.mp4",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    duration: "1m 29s",
+    tags: ["Romantic", "Sightseeing"],
+    aspect: "1280/960",
+    description:
+      "🏙️ We are expressing about our love and the how she is feeling after meeting with me ❤️ and going to the top the Burj Khalifa world tallest building. 🗼✨ Having a romantic and beautiful Peace of Mind 🧘‍♂️💖 and the time that we spent over and with this beautiful sweet memory talk. 🗣️💞",
+  },
+  {
+    id: "dubai-diary",
+    title: "",
+    thumbnail: "media/photos/dubai-diary.jpg",
+    video: "media/videos/dubai-diary.mp4",
+    year: 2026,
+    match: 100,
+    rating: "LVR-Only",
+    duration: "1m 03s",
+    tags: ["Milestone", "Romantic"],
+    aspect: "540/960",
+    description:
+      "💖 A memory love story collection from Dubai. ✨ This one year feel amazing with so many up and down 📈📉 but still we are being together 👩‍❤️‍👨 and brining so many things for the future. 🔮 Your are the love of my life 🥰 that bring so much love energy into our life ❤️‍🔥 and can't get over you all of those memory in our life. 📸 Niruu is the love of my life… 💍👩‍❤️‍💋‍👩",
+  },
+  {
+    id: "emotional-talk",
+    title: "",
+    thumbnail: "media/photos/emotional-talk.jpg",
+    video: "media/videos/emotional-talk.mp4",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    duration: "2m 45s",
+    tags: ["Romantic", "Real"],
+    aspect: "1706/960",
+    description:
+      "🥺 It is one of the cutest love moment of our days. ❤️ I am saying so so sorry 🙇‍♂️ and kissing you every where, 💋 bring you the best date night turn into emotional days 🌙✨ and such a love bonding moment. 🤝💞 I am really sorry for that I can't wait Hold you kiss and make you feel you are really mine 🫂💋 and I won't let you go anywhere babby. 🙅‍♂️❤️ It is also become once in life time curtness love emotional talk of ours love story. 📖❤️",
+  },
+  {
+    id: "all-yours-niruu",
+    title: "",
+    thumbnail: "media/photos/all-yours-niruu.jpg",
+    video: "media/videos/all-yours-niruu.mp4",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    duration: "0m 38s",
+    tags: ["Romantic", "Love Notes"],
+    aspect: "540/960",
+    description:
+      "💋 Love notes moment of us where kissing and loving isn't get enough for us. 💋 Missing you more than anything babby. 🥺 Come to me soon…….. ✈️❤️",
+  },
+  {
+    id: "all-celebrating",
+    title: "",
+    thumbnail: "media/photos/all-celebrating.jpg",
+    video: "media/videos/all-celebrating.mp4",
+    year: 2026,
+    match: 100,
+    rating: "LVR-Only",
+    duration: "4m 24s",
+    tags: ["Milestone", "Romantic"],
+    aspect: "540/960",
+    description:
+      "This is the diary of whatever we have celebrating so far till now. 📖❤️ You are my life goal milestone 🏆 That will drive our life to chase on each other day by day. 🏃‍♂️💞 The love is getting deeper into deeper 🌊💘 and I can make a lot of effort and a lot of workload for us to build a very great future. 🏗️🔮 Just be with me and keep celebrating the every single moment 🥂 and every highest and low together 📈📉 so we will be make it on for the future. 🫂✨ I really love you so much 🥰 and can't wait to hug you again. 🫂❤️",
+  },
+  {
+    id: "desi-girl",
+    title: "",
+    thumbnail: "media/photos/desi-girl.jpg",
+    video: "media/videos/desi-girl.mp4",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    duration: "0m 09s",
+    tags: ["Romantic", "Traditional"],
+    aspect: "540/960",
+    description:
+      "👑 My Queen is showing off the love Hennah 🌿✨ that is way beyond beautiful with Indian look. 🇮🇳💃 You are beauty make me blush 😳💕 and take my breath away 🫁❤️ and always loving you is not getting over enough. ♾️💋 Let's have a Indian look together in future 👩‍❤️‍👨🥻 and make cute video like this more 🎬💖 so that I can add it up into ourflix diary. 📺🎞️",
+  },
+  {
+    id: "sunflower",
+    title: "",
+    thumbnail: "media/photos/sunflower.jpg",
+    video: "media/videos/sunflower.mp4",
+    year: 2026,
+    match: 100,
+    rating: "LVR-Only",
+    duration: "0m 09s",
+    tags: ["Romantic", "Sweet"],
+    aspect: "540/960",
+    description:
+      "🌻 The theory of sunflower is you already know that, 💛 You are the way beyond of the love ✨ and Even though I will be far away 🛣️✈️ you will always be my sunshine ☀️ and you'll always be my love. 👑💞 Always being with you and loving you 🥰 I'll coming to you very soon ⏳✈️ or we are going to be together very soon 👩‍❤️‍👨 with that promise this flower is bring you a anniversary blessing. 🌻💍✨",
+  },
+];
+
+// ---------------------------------------------------------------------------
+// ROW 2 — LOVE STORY MOMENT
+// ---------------------------------------------------------------------------
+const PHOTOS = [
+  {
+    id: "our-love-story",
+    title: "From Fresh Petals to Forever",
+    image: "media/photos/our-love-story.jpg",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    aspect: "1350/1688",
+    tags: ["Romantic", "Flowers", "Keepsake"],
+    description:
+      "You gave me roses, and instead of letting them fade, we kept them just like we've kept every promise to each other. Some flowers wilt, but what we have only grows deeper with time. From that first bouquet to forever, I choose you. 🌹💕🥰✨",
+  },
+  {
+    id: "love-letter",
+    title: "To My Dearest One & Only Niruu",
+    image: "media/photos/love-letter.jpg",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    aspect: "1462/1644",
+    tags: ["Love Letter", "Romantic", "Proposal"],
+    description:
+      "Every word on this page came straight from the deepest part of my heart — no filter, just truth. This letter holds my past, my present, and every future I want to spend beside you. My love, my word felt incomplete before you; you're the sentence I never want to end. 💌💖✨",
+  },
+  {
+    id: "ram-mandir",
+    title: "Blessed From God",
+    image: "media/photos/ram-mandir.jpg",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    aspect: "1500/844",
+    tags: ["Faith", "Family", "Blessed"],
+    description:
+      "Before every big step, we bowed our heads together and asked for blessings on our journey. Our love isn't just ours — it's held by faith, family, and something far greater than us. Grateful today, and every day, for the divine grace watching over what we're building. 🙏🌼💛",
+  },
+  {
+    id: "perfect-love-story-collage",
+    title: "Our Perfect Love Story",
+    image: "media/photos/perfect-love-story-collage.jpg",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    aspect: "896/1195",
+    tags: ["Milestone", "Collage", "Us"],
+    description:
+      "Every little frame here is a chapter we wrote together — the giggles, the getaways, the quiet in-betweens. Looking back at it all, I can't believe how much love we packed into one single year. This is only the beginning of our story, my love. 💫💕🌟",
+  },
+  {
+    id: "ain-dubai-view",
+    title: "The Way You Look At Me",
+    image: "media/photos/ain-dubai-view.jpg",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    aspect: "1500/2000",
+    tags: ["Ain Dubai", "Romantic", "Skyline"],
+    description:
+      "With the whole Dubai skyline behind us, all I could see was you. This is the look I never want to stop giving — the one that says there's nowhere else I'd rather be. One year in, and you're still my favorite view. 🤍😍💕",
+  },
+  {
+    id: "proposal-moment",
+    title: "A Forehead Kiss at the Top of the World",
+    image: "media/photos/proposal-moment.jpg",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    aspect: "1500/2000",
+    tags: ["Romantic", "Dubai", "Ain Dubai"],
+    description:
+      "High above the sea, with my letter finally in your hands and your head resting on my shoulder — that was the moment my heart knew for sure. No grand words needed, just this quiet, safe kind of love. One year down, a whole lifetime to go. 🤍💕✨",
+  },
+  {
+    id: "ce-la-vi-night",
+    title: "Under the Roses & the Burj Khalifa",
+    image: "media/photos/ce-la-vi-night.jpg",
+    year: 2025,
+    match: 99,
+    rating: "LVR-Only",
+    aspect: "1500/2000",
+    tags: ["Date Night", "Dubai", "CÉ LA VI"],
+    description:
+      "Beneath a canopy of roses with the Burj Khalifa glowing behind us, it felt like the whole city dressed up just for our night. Glasses raised, hearts fuller than ever — this is the kind of magic I once only dreamed about. And I got to live it with you. 🌹🥂❤️😍",
+  },
+  {
+    id: "sweetest-celebration",
+    title: "Sweetest Celebration",
+    image: "media/photos/best-dessert-night.jpg",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    aspect: "1500/2000",
+    tags: ["Celebration", "Dessert", "CÉ LA VI"],
+    description:
+      "This little chocolate dome tasted like everything we'd been working toward, finally coming true. Every \"congratulations\" on that plate felt like the universe cheering us on. Here's to celebrating a hundred more wins side by side. 🍫✨💖🥂",
+  },
+  {
+    id: "distance-couldnt-dim-us",
+    title: "Distance Couldn't Dim Us",
+    image: "media/photos/facetime-call.jpg",
+    year: 2025,
+    match: 98,
+    rating: "LVR-Only",
+    aspect: "923/2000",
+    tags: ["FaceTime", "Long Distance", "Us"],
+    description:
+      "Some of our sweetest moments happened through a little screen, oceans and time zones between us. But even pixelated and far apart, your face was still my favorite place to land at the end of a day. One year later, I'm grateful we never let the distance write our ending. 💛📱💞",
+  },
+  {
+    id: "purse-flower",
+    title: "Beauty That Defines the Flower",
+    image: "media/photos/purse-flower.jpg",
+    year: 2026,
+    match: 100,
+    rating: "LVR-Only",
+    aspect: "1500/2000",
+    tags: ["Flowers", "Surprise", "Niruu"],
+    description:
+      "A little bag of blooms, a small note, and the biggest smile I could ever ask to come home to. My love, you don't just hold the flowers — beauty like yours is what defines them. From your only one, always: you are, and will always be, the best. 🌸💕🥰",
+  },
+];
+
+// ---------------------------------------------------------------------------
+// ROW 3 — SPECIAL MILESTONES  (also powers the "Our Story" timeline)
+// ---------------------------------------------------------------------------
+const MILESTONES = [
+  {
+    id: "m1",
+    title: "The First Hello",
+    date: "July 2025", // 🔧 PLACEHOLDER
+    image: "media/photos/m1.jpg",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    tags: ["Milestone", "Romantic"],
+    description: "The conversation that started everything.", // 🔧 PLACEHOLDER
+  },
+  {
+    id: "m2",
+    title: "First 'I Love You'",
+    date: "September 2025",
+    image: "media/photos/m2.jpg",
+    year: 2025,
+    match: 100,
+    rating: "LVR-Only",
+    tags: ["Milestone", "Romantic"],
+    description: "Three words, zero hesitation.", // 🔧 PLACEHOLDER
+  },
+  {
+    id: "m3",
+    title: "Meeting The Family",
+    date: "December 2025",
+    image: "media/photos/m3.jpg",
+    year: 2025,
+    match: 96,
+    rating: "LVR-Only",
+    tags: ["Milestone", "Comedy"],
+    description: "Nervous laughs turned into a full family group chat.", // 🔧 PLACEHOLDER
+  },
+  {
+    id: "m4",
+    title: "One Year Together",
+    date: "July 2026",
+    image: "media/photos/m4.jpg",
+    year: 2026,
+    match: 100,
+    rating: "LVR-Only",
+    tags: ["Milestone", "Special Occasion"],
+    description: "365 days down, forever to go.", // 🔧 PLACEHOLDER
+  },
+];
+
+// ---------------------------------------------------------------------------
+// "OUR STORY" TAB — free-form narrative sections (optional, edit freely)
+// ---------------------------------------------------------------------------
+const OUR_STORY = {
+  intro:
+    "Every great show has an origin story. Here's ours.", // 🔧 PLACEHOLDER
+  // Uses MILESTONES above to build the timeline automatically.
+};
